@@ -7,24 +7,31 @@
 
 /* Set a background color for the entire page */
 body {
-    background-color: #f0f0f0;
+    background-color: rgb(255, 255, 255);
     font-family: Arial, sans-serif;
+    /*box-shadow: 0 2px 5px rgba(44, 39, 39, 0.25);*/
 }
 
 /* Center the main content in the middle of the page */
 h1 {
     text-align: center;
     margin-top: 20px;
+    color: #000000;
+    font-family: Orbitron Thin;
+    padding-bottom: 30px;
 }
 
 /* Style the form container */
 form {
     max-width: 400px;
-    margin: 0 auto;
+    margin:  auto;
     padding: 20px;
     background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    /*border-style: solid;*/
+
+    box-shadow: 0 0px 8px rgb(250, 118, 17);
+    font-family: Orbitron;
 }
 
 /* Style labels and inputs */
@@ -41,33 +48,45 @@ select {
     margin-bottom: 20px;
     border: 1px solid #ccc;
     border-radius: 4px;
+    font-family: Orbitron;
+}
+
+option:hover, option:checked{
+    background :rgb(250, 118, 17);
 }
 
 /* Style the Calculate button */
 #calculateButton {
-    background-color: #007BFF;
+    background-color: rgb(242, 106, 2);
     color: #fff;
     border: none;
     padding: 10px 20px;
     cursor: pointer;
     border-radius: 4px;
+    /*display: inline-block; margin-left: 10px;*/
 }
 
 #calculateButton:hover {
-    background-color: #0056b3;
+    /*color: rgb(242, 106, 2);*/
+    background-color: rgb(250, 118, 17);
 }
 
 /* Style the result container */
 #result {
-    margin-top: 20px;
-    padding: 20px;
-    background-color: #fff;
+    /*margin-top: 20px;*/
+    padding: 7.5px;
+    background-color: rgb(250, 118, 17);
     border-radius: 4px;
     max-width: 400px; /* Adjust the maximum width to your preference */
-    margin: 0 auto; /* Center the container horizontally */
+    /*margin: 0 auto; !* Center the container horizontally *!*/
     text-align: center; /* Center the text within the container */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     font-weight: bold;
+    display: inline-block;
+    margin-left: 45px;
+
+
+
 }
 
 /* Style for hidden elements */
