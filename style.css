@@ -21,16 +21,16 @@ h1 {
     padding-bottom: 30px;
 }
 
+
 /* Style the form container */
 form {
     max-width: 400px;
     margin:  auto;
     padding: 20px;
-    background-color: #fff;
+    background-color: #282626;
     border-radius: 15px;
     /*border-style: solid;*/
-
-    box-shadow: 0 0px 8px rgb(250, 118, 17);
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
     font-family: Orbitron;
 }
 
@@ -39,6 +39,7 @@ label {
     display: block;
     margin-bottom: 10px;
     font-weight: bold;
+    color: white;
 }
 
 input[type="number"],
@@ -46,14 +47,16 @@ select {
     width: 100%;
     padding: 10px;
     margin-bottom: 20px;
-    border: 1px solid #ccc;
+    border: 1px solid #ffffff;
     border-radius: 4px;
     font-family: Orbitron;
+    color: rgb(250, 118, 17);
+    background-color: #3b3737;
 }
 
-option:hover, option:checked{
-    background :rgb(250, 118, 17);
-}
+/*option:hover, option:checked{*/
+/*    background :rgb(250, 118, 17);*/
+/*}*/
 
 /* Style the Calculate button */
 #calculateButton {
