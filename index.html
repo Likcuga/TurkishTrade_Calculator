@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<link rel="stylesheet" type="text/css" href="style.css">
+<head>
+    <meta charset="UTF-8">
+    <title>Turkish Trade Calculator</title>
+</head>
+<h1>Turkish Trade Calculator</h1>
+<body>
+
+<form>
+    <label id="store_price">Store price:</label>
+    <input type="number" id="storePrice" name="storePrice" required>
+
+    <label for="storeCurrency">Store Currency:</label>
+    <select id="storeCurrency">
+        <option value="EUR">Euro (EUR)</option>
+        <option value="TRY">Turkish Lira (TRY)</option>
+        <option value="USD">United States Dollar (USD)</option>
+        <option value="GBP">Great British Pound (GBP)</option>
+        <option value="RSD">Serbian Dinar (RSD)</option>
+    </select>
+
+
+    <label id="store_fee">Store fee [%]</label>
+    <select id="storeFee">
+        <option value="3">3% (Dmarket)</option>
+        <option value="5">5% (CSGOSelly, ShadowPay, Market.CSGO)</option>
+        <option value="6">6% (Skinport over 1000$)</option>
+        <option value="10">10%</option>
+        <option value="12">12% (Skinport)</option>
+        <option value="15">15% (Skinbaron.de)</option>
+        <option value="other">Other</option>
+    </select>
+
+
+
+
+<!--    <label id="store_fee">Store fee [%]</label>-->
+<!--    <input type="number" id="storeFee" name="storeFee" required>-->
+
+
+
+    <label id="steam_price">Steam price:</label>
+    <input type="number" id="steamPrice" name="steamPrice" required>
+
+    <label for="steamMarketCurrency">Steam Market Currency:</label>
+    <select id="steamMarketCurrency">
+        <option value="EUR">Euro (EUR)</option>
+        <option value="TRY">Turkish Lira (TRY)</option>
+        <option value="USD">United States Dollar (USD)</option>
+        <option value="GBP">Great British Pound (GBP)</option>
+        <option value="RSD">Serbian Dinar (RSD)</option>
+    </select>
+
+
+    <label id="steam_fee">Steam fee[%]</label>
+    <select id="steamFee">
+        <option value="5">5%</option>
+        <option value="10">10%</option>
+        <option value="13">13% (Turkey)</option>
+        <option value="15">15%</option>
+        <option value="other">Other</option>
+    </select>
+
+
+
+<!--    <label id="steam_fee">Steam fee[%]:</label>-->
+<!--    <input type="number" id="steamFee" name="steamFee" required>-->
+
+    <button type="button" id="calculateButton">Calculate</button>
+</form>
+
+<div id="result" class="hidden">
+
+</div>
+
+<script src="scrypt.js"></script>
+</body>
+</html>
